@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Vakantiepark Fonteyn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Vakantiepark Fonteyn</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#accommodaties">Accommodaties</a></li>
+        <li><a href="#faciliteiten">Faciliteiten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <h2>Welkom bij Vakantiepark Fonteyn</h2>
+      <p>Geniet van een heerlijke vakantie op ons vakantiepark. Hier vindt u rust, natuur en ontspanning.</p>
+      <a href="#accommodaties" class="button">Bekijk onze accommodaties</a>
+    </section>
+    
+    <section id="accommodaties">
+      <h2>Onze accommodaties</h2>
+      <ul>
+        <li>
+          <h3>Bungalow</h3>
+          <img src="bungalow.jpg" alt="Bungalow">
+          <p>Onze bungalows zijn voorzien van alle gemakken en bieden ruimte aan maximaal 4 personen.</p>
+          <a href="#contact" class="button">Reserveer nu</a>
+        </li>
+        <li>
+          <h3>Tent</h3>
+          <img src="tent.jpg" alt="Tent">
+          <p>Verblijf midden in de natuur in een van onze tenten. Geschikt voor maximaal 6 personen.</p>
+          <a href="#contact" class="button">Reserveer nu</a>
+        </li>
+        <li>
+          <h3>Caravan</h3>
+          <img src="caravan.jpg" alt="Caravan">
+          <p>Onze caravans bieden comfort en gezelligheid en zijn geschikt voor maximaal 2 personen.</p>
+          <a href="#contact" class="button">Reserveer nu</a>
+        </li>
+      </ul>
+    </section>
+    
+    <section id="faciliteiten">
+      <h2>Onze faciliteiten</h2>
+      <ul>
+        <li>Zwembad</li>
+        <li>Tennisbaan</li>
+        <li>Speeltuin</li>
+        <li>Restaurant</li>
+        <li>Fietsverhuur</li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="contact.php" method="post">
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Versturen" class="button">
+      </form>
+    </section>
+</main>
+  <footer>
+    <p>&copy; Vakantiepark Fonteyn</p>
+  </footer>
+</body>
+</html>
